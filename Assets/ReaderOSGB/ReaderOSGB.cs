@@ -231,7 +231,7 @@ public class ReaderOSGB : MonoBehaviour
                 if (scene != null)
                     scene.transform.SetParent(this.transform, false);
                 else
-                    Debug.LogWarning("Unable to read OSGB data from " + rootFile);
+                    Debug.LogError("Unable to read OSGB data from " + rootFile);
             }
         }
         else
